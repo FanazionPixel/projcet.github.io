@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow is Cat</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- loader -->
+    <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+
+
+    <div class="header">
+        <!-- oranye -->
+        <div class="nav_circle">
+            <div class="circle_oranye">
+                <img src="assets/image/oranye.svg" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav_logo">
+                    <i class="fas fa-paw"></i>
+                    <h2>Paws Meow</h2>
+                </div>
+                <div class="nav_link">
+                    <ul class="nav_list">
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">service</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">jobs</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav_btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="home" id="home">
+        <div class="container">
+            <div class="home_content">
+                <div class="home_left">
+                    <div class="home_text">
+                        <h1 class="text1">We care all </h1>
+                        <h1 class="text2">your cats need!</h1>
+                        <p>We provide all nutrients for you’re cats with high quality food we offer.</p>
+                        <div class="home_btn">
+                            <a href="#" class="btn1">Find Now <i class="fas fa-angle-right"></i></a>
+                            <a href="#" class="btn2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="home_right">
+                    <div class="home_img">
+                        <div class="kucing">
+                            <div class="kucing1">
+                                <img src="assets/image/cat3.svg" alt="">
+                            </div>
+                            <div class="kucing2">
+                                <img src="assets/image/cat4.svg" alt="">
+                            </div>
+                            <div class="kucing3">
+                                <img src="assets/image/Cat 7 135.svg" alt="">
+                            </div>
+                        </div>
+                        <img src="assets/image/yellow.svg" class="circle_yellow" alt="">
+                        <img src="assets/image/cat 1.png" class="cat1" alt="">
+                        <img src="assets/image/Cat2.svg" class="cat2" alt="">
+                        <img src="assets/image/blue.svg" class="circle_blue" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.nav_btn').click(function(){
+        $('.nav_link').toggleClass('active');
+        $('.nav_btn i').toggleClass('active');
+
+       });
+   </script>
+   <script>
+       setTimeout(function(){ 
+        $('.loader').fadeToggle();
+       },3000);
+   </script>
+</body>
+</html>
